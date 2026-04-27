@@ -13,6 +13,8 @@
 2. Подготовлены тестовые файлы на Go и Dockerfile.
 3. Настроен и успешно выполнен `.gitlab-ci.yml`.
 
+![Статус Runner](./img/pipeline_success.png)
+
 **Код пайплайна:**
 ```yaml
 stages:
@@ -30,4 +32,3 @@ build:
   image: docker:latest
   script:
    - docker build .
-
